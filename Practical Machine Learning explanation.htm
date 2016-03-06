@@ -1,0 +1,898 @@
+<html>
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Helvetica Neue";
+	panose-1:2 0 5 3 0 0 0 2 0 4;}
+@font-face
+	{font-family:"Lucida Grande";
+	panose-1:2 11 6 0 4 5 2 2 2 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Cambria;}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:Times;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:Times;}
+code
+	{font-family:Courier;}
+pre
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Courier;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Lucida Grande";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Cambria;}
+span.Heading2Char
+	{font-family:Times;
+	font-weight:bold;}
+span.BalloonTextChar
+	{font-family:"Lucida Grande";}
+span.HTMLPreformattedChar
+	{font-family:Courier;}
+.MsoChpDefault
+	{font-family:Cambria;}
+@page WordSection1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><u>PROBLEM
+STATEMENT</u></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>“Using
+devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to
+collect a large amount of data about personal activity relatively
+inexpensively. These type of devices are part of the quantified self movement
+??? a group of enthusiasts who take measurements about themselves regularly to
+improve their health, to find patterns in their behavior, or because they are
+tech geeks. One thing that people regularly do is quantify how much of a
+particular activity they do, but they rarely quantify how well they do it. In
+this project, your goal will be to use data from accelerometers on the belt,
+forearm, arm, and dumbell of 6 participants. They were asked to perform barbell
+lifts correctly and incorrectly in 5 different ways.”</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:7.5pt;text-align:center;
+line-height:15.75pt;background:white'><b><u><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'>What should be submitted.</span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><span style='font-size:10.5pt;font-family:Arial;color:#333333'>The goal
+of your project is to predict the manner in which they did the exercise. This
+is the &quot;classe&quot; variable in the training set. You may use any of the
+other variables to predict with. You should create a report describing how you
+built your model, how you used cross validation, what you think the expected
+out of sample error is, and why you made the choices you did. You will also use
+your prediction model to predict 20 different test cases.</span></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><span style='font-size:10.5pt;font-family:Arial;color:#333333'>&nbsp;</span></p>
+
+<h2 style='margin-top:7.5pt;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+0cm;line-height:15.75pt;background:white'><strong><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'>Data</span></strong></h2>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;line-height:15.75pt;background:white'><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'>The training data for this project are
+available here:</span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;line-height:15.75pt;background:white'><u><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'><a
+href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"><span
+style='color:#2775D1'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</span></a></span></u></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;line-height:15.75pt;background:white'><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'>The test data are available here:</span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:15.0pt;margin-left:
+0cm;line-height:15.75pt;background:white'><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'><a
+href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"><span
+style='color:#2775D1'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</span></a></span></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><span style='font-size:10.5pt;font-family:Arial;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+line-height:15.75pt;background:white'><b><u><span style='font-size:10.5pt;
+font-family:Arial;color:#333333'>SOLUTION</span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><span style='font-size:10.5pt;font-family:Arial;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><span style='font-size:10.5pt;font-family:Arial;color:#333333'>Open the
+R tool and install the following packages by typing</span></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><i><span style='font-size:10.5pt;font-family:Arial;color:#333333'>Install.packages(“caret”)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><i><span style='font-size:10.5pt;font-family:Arial;color:#333333'>Install.packages(“randomForest”)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:15.0pt;line-height:15.75pt;background:
+white'><i><span style='font-size:10.5pt;font-family:Arial;color:#333333'>Install.packages(“e1071”)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Load
+the Give Libraries using the following command.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Library(caret)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>library(randomForest)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Library(e1071)</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>The
+training and Testing data set is available as links online.You can store the
+CSV Files as per the following command.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Urltrain = &quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>training = read.csv(url(Urltrain),
+na.strings=c(&quot;NA&quot;,&quot;#DIV/0!&quot;,&quot;&quot;))</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Urltest =
+&quot;http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><i><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>testing11 &lt;- read.csv(url(Urltest),
+na.strings=c(&quot;NA&quot;,&quot;#DIV/0!&quot;,&quot;&quot;))</span></i></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><b><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Addtionally,you can manually download the CSV Files from the
+given link by using the:-</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><b><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>Getwd()</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><b><span style='font-size:10.5pt;font-family:"Helvetica Neue";
+color:#333333'>And setting to the Location where you have stored the .CSV
+Files.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>There
+are many Columns which show high Variance, We get rid of them first by using
+the command:-</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>training.first
+&lt;- training[ , colSums(is.na(training)) == 0]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>remove
+= c('X', 'user_name', 'raw_timestamp_part_1', 'raw_timestamp_part_2',
+'cvtd_timestamp', 'new_window', 'num_window')</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>training.second
+&lt;- training.first[, -which(names(training.first) %in% remove)]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>We
+check the dimensions of the first and second row:-</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+nrow(training.first)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+19622</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+nrow(training.second)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+19622</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>There
+are many Columns which show high Variance,We get rid of them first by using the
+command:-</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+zV= nearZeroVar(training.dere[sapply(training.second, is.numeric)], saveMetrics
+= TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+training.nonzerovar = training.second[,zeroVar[, 'nzv']==0]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+dim(training.nonzerovar)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+19622&nbsp;&nbsp;&nbsp; 53</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+cM &lt;- cor(na.omit(training.nonzerovar[sapply(training.nonzerovar,
+is.numeric)]))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+dim(cM)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+52 52</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>cDF
+&lt;- expand.grid(row = 1:52, col = 1:52)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>cDF$correlation
+&lt;- as.vector(cM)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+cDF &lt;- expand.grid(row = 1:52, col = 1:52)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+cDF$correlation &lt;- as.vector(cM)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-bottom:7.5pt;text-indent:-18.0pt;
+line-height:15.0pt;background:white'><span style='font-size:10.5pt;font-family:
+Wingdings;color:#333333'>Ø<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>levelplot(correlation
+~ row+ col, cDF)</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;
+margin-left:18.0pt;line-height:15.0pt;background:white'><span style='font-size:
+10.5pt;font-family:"Helvetica Neue";color:#333333'><img border=0 width=417
+height=417 id="Picture 1"
+src="Practical%20Machine%20Learning%20explanation_files/image001.png"></span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+rcor = findCorrelation(corrMatrix, cutoff = .87, verbose = TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 10&nbsp; and column&nbsp; 1 with corr&nbsp; 0.992 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;Means:&nbsp;
+0.27 vs 0.168 so flagging column 10 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 1&nbsp; and column&nbsp; 9 with corr&nbsp; 0.925 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.25 vs 0.164 so flagging column 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 9&nbsp; and column&nbsp; 4 with corr&nbsp; 0.928 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.233 vs 0.161 so flagging column 9 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 8&nbsp; and column&nbsp; 2 with corr&nbsp; 0.966 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.245 vs 0.157 so flagging column 8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 2&nbsp; and column&nbsp; 11 with corr&nbsp; 0.884 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.228 vs 0.154 so flagging column 2 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 19&nbsp; and column&nbsp; 18 with corr&nbsp; 0.918 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.09 vs 0.154 so flagging column 18 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 46&nbsp; and column&nbsp; 31 with corr&nbsp; 0.914 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.101 vs 0.158 so flagging column 31 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Compare
+row 46&nbsp; and column&nbsp; 33 with corr&nbsp; 0.933 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;
+Means:&nbsp; 0.082 vs 0.161 so flagging column 33 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>All
+correlations &lt;= 0.87 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+training.decor = training.nonzerovar[,-rcor]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+dim(training.decor)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+19622&nbsp;&nbsp;&nbsp; 45</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>We
+now split our Training Data into 2 Sets with a 65% split to our modified training
+set and the remaining 35% which stays in the testing set.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+inTrain &lt;- createDataPartition(y=training.decor$classe, p=0.65, list=FALSE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+train &lt;- training.decor[inTrain,];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;&nbsp;
+test &lt;- training.decor[-inTrain,]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+dim(training);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+13737&nbsp;&nbsp;&nbsp; 46</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+dim(testing)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>[1]
+5885&nbsp;&nbsp; 46</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>set.seed(999)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>rf.training=randomForest(classe~.,data=train,ntree=100,
+importance=TRUE)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>rf.training</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>y=varImpPlot(rf.training,)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+y=varImpPlot(rf.training,)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+y</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MeanDecreaseAccuracy MeanDecreaseGini</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>yaw_belt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+32.029426&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 724.83447</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>total_accel_belt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12.604981&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 255.56995</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_belt_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.593406&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 86.91657</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_belt_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.756169&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 101.48180</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_belt_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+19.055566&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 340.55547</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_belt_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+17.916008&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 215.04822</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_belt_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16.679845&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 408.57591</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_belt_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.244762&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 328.98098</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>roll_arm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20.024840&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 236.10620</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>pitch_arm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.497100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 144.78818</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>yaw_arm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.096575&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 204.52550</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>total_accel_arm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+11.077107&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 80.05923</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_arm_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.526429&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+123.59521</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_arm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.786235&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 61.49579</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_arm_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.504261&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 184.80547</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_arm_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.453446&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 135.70542</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_arm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.766164&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 109.37582</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_arm_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.604656&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 188.95669</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_arm_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+9.299032&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 168.88421</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_arm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.245923&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 147.37576</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>roll_dumbbell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.598563&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 326.60878</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>pitch_dumbbell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+8.315829&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 135.90273</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>yaw_dumbbell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.627680&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 194.76769</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>total_accel_dumbbell&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12.948539&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 205.95248</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_dumbbell_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.828084&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 223.95488</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_dumbbell_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+13.039806&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 189.44484</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_dumbbell_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+17.225338&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 286.71295</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_dumbbell_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+16.209837&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 244.10784</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_dumbbell_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+14.924324&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 337.38854</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_dumbbell_y&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20.257029&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+493.11831</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_dumbbell_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+28.686235&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 572.07015</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>roll_forearm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+14.688614&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 425.69150</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>pitch_forearm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+19.962761&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 566.22108</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>yaw_forearm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+14.481442&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 142.72084</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>total_accel_forearm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+14.186970&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 88.99483</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_forearm_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.437910&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 70.97954</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_forearm_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+20.587655&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 115.92990</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>gyros_forearm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+17.605637&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 77.98011</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_forearm_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+15.020910&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 226.22867</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_forearm_y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12.898990&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 119.38238</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>accel_forearm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+17.083710&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 211.92138</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_forearm_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+10.898452&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 164.74667</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_forearm_y&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13.269938&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+189.39069</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>magnet_forearm_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+23.045708&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 227.39173</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>tree.pred=predict(rf.training,test,type=&quot;class&quot;)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>predMatrix
+= with(testing,table(tree.pred,classe))</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&gt;
+confusionMatrix(tree.pred,test$classe)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Confusion
+Matrix and Statistics</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Reference</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Prediction&nbsp;&nbsp;&nbsp;
+A&nbsp;&nbsp;&nbsp; B&nbsp;&nbsp;&nbsp; C&nbsp;&nbsp;&nbsp; D&nbsp;&nbsp;&nbsp;
+E</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+A 1949&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp; 0</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+B&nbsp;&nbsp;&nbsp; 4 1317&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+0</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+C&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 6 1186&nbsp;&nbsp; 18&nbsp;&nbsp;&nbsp;
+0</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+D&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 1
+1104&nbsp;&nbsp;&nbsp; 2</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+E&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;
+3 1260</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Overall
+Statistics</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Accuracy : 0.9929&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+95% CI : (0.9906, 0.9947)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;
+No Information Rate :
+0.2845&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;
+P-Value [Acc &gt; NIR] : &lt; 2.2e-16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kappa : 0.991&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;Mcnemar's
+Test P-Value :
+NA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Statistics
+by Class:</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;Class: A Class: B Class: C Class: D Class: E</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Sensitivity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.9980&nbsp;&nbsp; 0.9917&nbsp;&nbsp; 0.9908&nbsp;&nbsp; 0.9813&nbsp;&nbsp;
+0.9984</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Specificity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.9990&nbsp;&nbsp; 0.9975&nbsp;&nbsp; 0.9958&nbsp;&nbsp; 0.9995&nbsp;&nbsp;
+0.9995</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Pos
+Pred Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.9974&nbsp;&nbsp;
+0.9895&nbsp;&nbsp; 0.9802&nbsp;&nbsp; 0.9973&nbsp;&nbsp; 0.9976</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Neg
+Pred Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.9992&nbsp;&nbsp;
+0.9980&nbsp;&nbsp; 0.9981&nbsp;&nbsp; 0.9964&nbsp;&nbsp; 0.9996</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Prevalence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.2845&nbsp;&nbsp; 0.1934&nbsp;&nbsp; 0.1744&nbsp;&nbsp; 0.1639&nbsp;&nbsp;
+0.1838</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Detection
+Rate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.2839&nbsp;&nbsp;
+0.1918&nbsp;&nbsp; 0.1728&nbsp;&nbsp; 0.1608&nbsp;&nbsp; 0.1835</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Detection
+Prevalence&nbsp;&nbsp; 0.2846&nbsp;&nbsp; 0.1939&nbsp;&nbsp; 0.1763&nbsp;&nbsp;
+0.1613&nbsp;&nbsp; 0.1840</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Balanced
+Accuracy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.9985&nbsp;&nbsp; 0.9946&nbsp;&nbsp;
+0.9933&nbsp;&nbsp; 0.9904&nbsp;&nbsp; 0.9989</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Random
+Forests give us Highly Accurate results.Hence,we go in for this for testing our
+Test Data.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>Now,we
+use our Random Forest Model to test our Test set predictors.</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:7.5pt;text-align:center;
+line-height:15.0pt;background:white'><b><u><span style='font-size:10.5pt;
+font-family:"Helvetica Neue";color:#333333'>TESTING DATA PREDICTIONS</span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:15.0pt;background:
+white'><span style='font-size:10.5pt;font-family:"Helvetica Neue";color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'>&gt; Testsetpredictors
+&lt;- predict(rf.training, testing11)</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'>&gt;
+Testsetpredictors</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'>&nbsp;1&nbsp;
+2&nbsp; 3&nbsp; 4&nbsp; 5&nbsp; 6&nbsp; 7&nbsp; 8&nbsp; 9 10 11 12 13 14 15 16
+17 18 19 20 </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'>&nbsp;B&nbsp;
+A&nbsp; B&nbsp; A&nbsp; A&nbsp; E&nbsp; D&nbsp; B&nbsp; A&nbsp; A&nbsp; B&nbsp;
+C&nbsp; B&nbsp; A&nbsp; E&nbsp; E&nbsp; A&nbsp; B&nbsp; B&nbsp; B </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Times'>Levels: A B
+C D E</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
